@@ -1,0 +1,17 @@
+using System;
+
+namespace lesson2task1
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Минимальная температура: ");
+            double tmax = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Максимальная температура: ");
+            double tmin = Convert.ToDouble(Console.ReadLine());
+            double tsr = (tmax + tmin)/2;
+            Console.WriteLine(tsr);
+        }
+    }
+}
