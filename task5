@@ -1,0 +1,25 @@
+using System;
+
+namespace lesson2task5
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Ведите месяц: ");
+            string MonthTitle = Console.ReadLine();
+            Console.Write("Введите среднюю температуру: ");
+            double tsr = Convert.ToDouble(Console.ReadLine());
+            if (((MonthTitle == "декабрь")|| (MonthTitle == "январь")|| (MonthTitle == "февраль")) && tsr > 0)
+            {
+                Console.WriteLine("Дождливая зима");
+            }
+            else
+            {
+                Console.WriteLine("То, что мы имеем - явно не дождливая зима");
+            }
+
+        }
+    }
+
+}

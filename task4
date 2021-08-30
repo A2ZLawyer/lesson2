@@ -1,0 +1,51 @@
+using System;
+
+namespace lesson2task4
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int CheckN = 1;
+            DateTime DateAndTime = DateTime.Now;
+            string NameYL = "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"МЕДАЛЛ ЭСТЕТИКА\"";
+            string AddressYL = "127410, Москва г, Алтуфьевское ш, дом No 33Г";
+            string goods = "ПЦР - тест.ВЫЯВЛЕНИЕ РНК КОРОНАВИРУСА COVID - 19(SARS - COV - 2)";
+            int GoodsNinCheck = 7;
+            double GoodPrice = 2600.99;
+            double Totalprice = GoodsNinCheck * GoodPrice;
+            int NDS = 0;
+            double PrePay = 100;
+            double Nalichnymi = 0;
+            double ByCard = Totalprice;
+            long KKT = 0004492900058214;
+            long FN = 996044300748510;
+            long FP = 2658500425;
+            string SN = "ОСН";
+            long INN = 7813612669;
+            string Mesto = "https://www.medall.space";
+            string customeremail = "metdim@yandex.ru";
+            string shopemail = "ofd.support@tensor.ru";
+            Console.WriteLine(NameYL);
+            Console.WriteLine(AddressYL);
+            Console.Write("КАССОВЫЙ ЧЕК ");
+            Console.WriteLine(CheckN);
+            Console.WriteLine(DateAndTime);
+            Console.WriteLine(goods);
+            Console.WriteLine(GoodsNinCheck + " × " + GoodPrice + " = " + Totalprice + " рублей");
+            Console.WriteLine("ИТОГО " + Totalprice + " рублей");
+            Console.WriteLine("НДС " + NDS + " % ");
+            Console.WriteLine("ПРЕДОПЛАТА " + PrePay + " % ");
+            Console.WriteLine("НАЛИЧНЫМИ " + Nalichnymi + " рублей");
+            Console.WriteLine("БЕЗНАЛИЧНЫМИ " + ByCard + " рублей");
+            Console.WriteLine("ККТ " + KKT + "    ФН" + FN);
+            Console.WriteLine("ФП " + FP);
+            Console.WriteLine("Система налогообложения " + SN);
+            Console.WriteLine("ИНН " + INN);
+            Console.WriteLine("Место расчетов " + Mesto);
+            Console.WriteLine("ЭЛ.АДР.ПОКУПАТЕЛЯ " + customeremail);
+            Console.WriteLine("ЭЛ.АДР.ОТПРАВИТЕЛЯ " + shopemail);
+            Console.WriteLine("САЙТ ФНС www.nalog.ru");
+        }
+}
+}
