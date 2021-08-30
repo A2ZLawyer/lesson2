@@ -1,0 +1,19 @@
+using System;
+
+namespace lesson2task3
+{
+    class Program
+    //Определить, является ли введённое пользователем число чётным
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Введите число: ");
+            int deg = Convert.ToInt32(Console.ReadLine());
+            if (deg % 2 == 1)
+            { Console.WriteLine("Введенное число не является чётным"); }
+            else
+            { Console.WriteLine("Введенно чётное число"); }
+            { Console.WriteLine(deg); }
+        }
+    }
+}
