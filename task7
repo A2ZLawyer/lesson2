@@ -1,0 +1,25 @@
+using System;
+
+namespace lesson2task7
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Ведите число: ");
+            string digit = Console.ReadLine();
+            char [] digitchar = digit.ToCharArray();
+            Array.Reverse(digitchar);
+            string polindrom = new string(digitchar);
+            Console.WriteLine("Исходное число " + digit);
+            Console.WriteLine("Обратное число " + polindrom);
+            if (digit==polindrom)
+            {
+                Console.WriteLine("Число является полиндромом");
+            }
+            else
+            {
+                Console.WriteLine("Исходное число не является полиндромом");
+            }
+        }
+    }
